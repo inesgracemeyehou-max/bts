@@ -12,12 +12,12 @@
 </header>
 
 <nav>
-    <a href="Dashboard.html">Dashboard</a>
-    <a href="GestionE.html">Employés</a>
-    <a href="poste.html">Postes</a>
-    <a href="contract.html">Contrats</a>
-    <a href="paie.html">Paie</a>
-    <a href="logout.html">Déconnexion</a>
+    <a href="DashboardAdmin.php">Dashboard</a>
+    <a href="GestionE.php">Employés</a>
+    <a href="poste.php">Postes</a>
+    <a href="contract.php">Contrats</a>
+    <a href="paie.php">Paie</a>
+    <a href="logout.php">Déconnexion</a>
 </nav>
 
 <div class="container">

@@ -141,3 +141,70 @@ table td {
         flex-direction: column;
     }
 }
+
+/* Ajouter à la fin de style1.css */
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+.btn-cancel {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+
+.btn-clear {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-clear:hover {
+    background-color: #c82333;
+}
+
+.user-info {
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-deconnexion {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.btn-deconnexion:hover {
+    background-color: #c82333;
+}
