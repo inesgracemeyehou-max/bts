@@ -102,20 +102,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="idposte">Poste *</label>
-                        <select id="idposte" name="idposte" required>
-                            <option value="">Sélectionnez un poste</option>
-                            <?php foreach($postes as $poste): ?>
-                                <option value="<?php echo $poste['idposte']; ?>" 
-                                    <?php echo ($poste['idposte'] == $employee['idposte']) ? 'selected' : ''; ?>>
-                                    <?php echo htmlspecialchars($poste['libelle']); ?> - 
-                                    <?php echo htmlspecialchars($poste['departement']; ?>)
-                                </option>
-                            <?php endforeach; ?>
-                        </select>
-                    </div>
-                </div>
+    <div class="form-group">
+        <label for="idposte">Poste *</label>
+        <select id="idposte" name="idposte" required>
+            <option value="">Sélectionnez un poste</option>
+            <?php 
+            foreach($postes as $poste):
+                $selected = ($poste['idposte'] == $employee['idposte']) ? 'selected' : '';
+                $libelle = htmlspecialchars($poste['libelle']);
+                $departement = htmlspecialchars($poste['departement']);
+                $salaire = number_format($poste['salairebase'], 0, ',', ' ');
+            ?>
+                <option value="<?= $poste['idposte'] ?>" <?= $selected ?>>
+                    <?= $libelle ?> - <?= $departement ?> (<?= $salaire ?> FCFA)
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+</div>
 
                 <div class="form-group">
                     <label for="adresse">Adresse</label>

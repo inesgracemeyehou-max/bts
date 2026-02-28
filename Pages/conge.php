@@ -12,7 +12,7 @@
 </header>
 
 <nav>
-    <a href="Dashboard.html">Dashboard</a>
+    <a href="DashboardAdmin.php">Dashboard</a>
 </nav>
 
 <div class="container">
